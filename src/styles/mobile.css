@@ -1,0 +1,109 @@
+@media (max-width: 640px) {
+  .mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1);
+    z-index: 50;
+  }
+
+  .mobile-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  .mobile-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    color: #6b7280;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+
+  .mobile-menu-item:active {
+    background-color: #f3f4f6;
+  }
+
+  .mobile-menu-item.active {
+    color: #e11d48;
+  }
+
+  .mobile-menu-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Calendar Adjustments */
+  .calendar-grid {
+    font-size: 0.875rem;
+  }
+
+  .calendar-day {
+    aspect-ratio: 1;
+    padding: 0.25rem;
+  }
+
+  /* Notification Adjustments */
+  .notification-center {
+    position: fixed;
+    inset: 1rem;
+    max-width: none;
+    margin: 0;
+  }
+
+  /* Header Adjustments */
+  .header-content {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-actions {
+    gap: 0.75rem;
+  }
+
+  /* Card Adjustments */
+  .stat-card {
+    padding: 1rem;
+  }
+
+  .stat-card-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Button Adjustments */
+  .primary-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tablet-sidebar {
+    width: 250px;
+  }
+}
+
+/* Touch Optimizations */
+@media (hover: none) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .touch-padding {
+    padding: 0.75rem;
+  }
+}
